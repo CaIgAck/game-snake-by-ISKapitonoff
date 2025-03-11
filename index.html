@@ -11,6 +11,9 @@
 
 <body>
     <div class="container">
+        <div class="score-container">
+            <h2>Ваш счет: <span class="score-text">0</span></h2>
+        </div>
         <div class="field">
             <div class="row" data-row="0">
                 <div class="col" data-col="0"></div>
@@ -134,7 +137,8 @@
             </div>
         </div>
         <div class="controls">
-            <button onclick="initGame()">Начать</button>
+            <button onclick="initGame()" class="btn btn-start">Начать</button>
+            <button onclick="resetGame()" class="btn btn-reset">Сбросить</button>
         </div>
     </div>
 

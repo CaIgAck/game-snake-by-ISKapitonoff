@@ -3,10 +3,24 @@ let appleCoords = null
 let snakeHead = null
 let speed = 500
 
-const snakeTail = [];
+// 1. Отчищать snakeTail
+// 2. Отчищать поле
+// 3. Отчищать яблоки
+// 4. Удалять контролы
+// 5. Удалять engine
+
+let snakeTail = [];
 const rows = document.querySelectorAll('.row');
 const cols = rows[0].querySelectorAll('.col');
-const baseSpeed = 500
+const baseSpeed = 500;
+
+snakeTail = new Proxy(snakeTail, {
+    set(target, prop, val) {
+        target[prop] = val;
+        document.querySelector('.score-text').innerHTML = target.length
+        return true;
+    }
+})
 
 const commands = {
     'down': 'down',
@@ -28,6 +42,10 @@ function initGame() {
     initControls();
 
     engine()
+}
+
+function resetGame() {
+    document.location.reload()
 }
 
 
