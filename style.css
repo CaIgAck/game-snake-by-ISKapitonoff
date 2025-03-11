@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    place-content: center center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    height: 50px;
+    width: 50px;
+    border: 1px #000000 solid;
+}
+
+.snake {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+
+.snake-tail {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+}
+
+.apple {
+    height: 50px;
+    width: 50px;
+    background-color: green;
+}

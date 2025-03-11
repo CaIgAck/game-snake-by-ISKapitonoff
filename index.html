@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game snake</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="field">
+            <div class="row" data-row="0">
+                <div class="col" data-col="0"></div>
+                <div class="col" data-col="1"></div>
+                <div class="col" data-col="2"></div>
+                <div class="col" data-col="3"></div>
+                <div class="col" data-col="4"></div>
+                <div class="col" data-col="5"></div>
+                <div class="col" data-col="6"></div>
+                <div class="col" data-col="7"></div>
+                <div class="col" data-col="8"></div>
+                <div class="col" data-col="9"></div>
+            </div>
+            <div class="row" data-row="1">
+                <div class="col" data-col="0"></div>
+                <div class="col" data-col="1"></div>
+                <div class="col" data-col="2"></div>
+                <div class="col" data-col="3"></div>
+                <div class="col" data-col="4"></div>
+                <div class="col" data-col="5"></div>
+                <div class="col" data-col="6"></div>
+                <div class="col" data-col="7"></div>
+                <div class="col" data-col="8"></div>
+                <div class="col" data-col="9"></div>
+            </div>
+            <div class="row" data-row="2">
+                <div class="col" data-col="0"></div>
+                <div class="col" data-col="1"></div>
+                <div class="col" data-col="2"></div>
+                <div class="col" data-col="3"></div>
+                <div class="col" data-col="4"></div>
+                <div class="col" data-col="5"></div>
+                <div class="col" data-col="6"></div>
+                <div class="col" data-col="7"></div>
+                <div class="col" data-col="8"></div>
+                <div class="col" data-col="9"></div>
+            </div>
+            <div class="row" data-row="3">
+                <div class="col" data-col="0"></div>
+                <div class="col" data-col="1"></div>
+                <div class="col" data-col="2"></div>
+                <div class="col" data-col="3"></div>
+                <div class="col" data-col="4"></div>
+                <div class="col" data-col="5"></div>
+                <div class="col" data-col="6"></div>
+                <div class="col" data-col="7"></div>
+                <div class="col" data-col="8"></div>
+                <div class="col" data-col="9"></div>
+            </div>
+            <div class="row" data-row="4">
+                <div class="col" data-col="0"></div>
+                <div class="col" data-col="1"></div>
+                <div class="col" data-col="2"></div>
+                <div class="col" data-col="3"></div>
+                <div class="col" data-col="4"></div>
+                <div class="col" data-col="5"></div>
+                <div class="col" data-col="6"></div>
+                <div class="col" data-col="7"></div>
+                <div class="col" data-col="8"></div>
+                <div class="col" data-col="9"></div>
+            </div>
+            <div class="row" data-row="5">
+                <div class="col" data-col="0"></div>
+                <div class="col" data-col="1"></div>
+                <div class="col" data-col="2"></div>
+                <div class="col" data-col="3"></div>
+                <div class="col" data-col="4"></div>
+                <div class="col" data-col="5"></div>
+                <div class="col" data-col="6"></div>
+                <div class="col" data-col="7"></div>
+                <div class="col" data-col="8"></div>
+                <div class="col" data-col="9"></div>
+            </div>
+            <div class="row" data-row="6">
+                <div class="col" data-col="0"></div>
+                <div class="col" data-col="1"></div>
+                <div class="col" data-col="2"></div>
+                <div class="col" data-col="3"></div>
+                <div class="col" data-col="4"></div>
+                <div class="col" data-col="5"></div>
+                <div class="col" data-col="6"></div>
+                <div class="col" data-col="7"></div>
+                <div class="col" data-col="8"></div>
+                <div class="col" data-col="9"></div>
+            </div>
+            <div class="row" data-row="7">
+                <div class="col" data-col="0"></div>
+                <div class="col" data-col="1"></div>
+                <div class="col" data-col="2"></div>
+                <div class="col" data-col="3"></div>
+                <div class="col" data-col="4"></div>
+                <div class="col" data-col="5"></div>
+                <div class="col" data-col="6"></div>
+                <div class="col" data-col="7"></div>
+                <div class="col" data-col="8"></div>
+                <div class="col" data-col="9"></div>
+            </div>
+            <div class="row" data-row="8">
+                <div class="col" data-col="0"></div>
+                <div class="col" data-col="1"></div>
+                <div class="col" data-col="2"></div>
+                <div class="col" data-col="3"></div>
+                <div class="col" data-col="4"></div>
+                <div class="col" data-col="5"></div>
+                <div class="col" data-col="6"></div>
+                <div class="col" data-col="7"></div>
+                <div class="col" data-col="8"></div>
+                <div class="col" data-col="9"></div>
+            </div>
+            <div class="row" data-row="9">
+                <div class="col" data-col="0"></div>
+                <div class="col" data-col="1"></div>
+                <div class="col" data-col="2"></div>
+                <div class="col" data-col="3"></div>
+                <div class="col" data-col="4"></div>
+                <div class="col" data-col="5"></div>
+                <div class="col" data-col="6"></div>
+                <div class="col" data-col="7"></div>
+                <div class="col" data-col="8"></div>
+                <div class="col" data-col="9"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <button onclick="initGame()">Начать</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
